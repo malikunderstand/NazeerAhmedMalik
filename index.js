@@ -1,0 +1,19 @@
+(function () {
+  emailjs.init('zQVLYNOVWwAbLx9NW');
+})();
+
+document
+  .getElementById('contact-form')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_2hwulc8', 'template_6wupp6c', this).then(
+      () => {
+        alert('Message sent successfully!');
+      },
+      (error) => {
+        alert('Failed to send message. Please try again.');
+        console.log(error);
+      }
+    );
+  });
