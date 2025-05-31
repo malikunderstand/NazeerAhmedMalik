@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nazeer Ahmed || Portfolio</title>
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
@@ -12,6 +16,9 @@
     <style>
       body {
         font-family: 'Segoe UI', sans-serif;
+      }
+      body {
+        user-select: none;
       }
       header,
       section {
@@ -88,6 +95,29 @@
         transition: color 0.3s;
       }
       .social-icons a:hover {
+        color: #0056b3;
+      }
+      #cont p {
+        margin-top: 10px;
+      }
+      #cont i {
+        font-size: 20px;
+        vertical-align: middle;
+      }
+      #cont a {
+        color: black;
+      }
+      #cont i:hover {
+        color: #0056b3;
+      }
+      .icon {
+        margin-left: -10px;
+      }
+      .icon p i {
+        font-size: 20px;
+        line-height: 5px;
+      }
+      .icon p i:hover {
         color: #0056b3;
       }
     </style>
@@ -178,7 +208,7 @@
       <div class="container">
         <h2>Projects</h2>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h5 class="card-title">Pizza Website</h5>
@@ -192,7 +222,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h5 class="card-title">Book Website</h5>
@@ -208,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h5 class="card-title">E-Commerce Website</h5>
@@ -222,7 +252,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h5 class="card-title">Construction Website</h5>
@@ -236,7 +266,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="card mb-4">
               <div class="card-body">
                 <h5 class="card-title">Calculator</h5>
@@ -329,50 +359,93 @@
     <!-- Contact -->
     <section id="contact" class="bg-light">
       <div class="container">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="from_name"
-              required
-            />
+        <div class="row p-2">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-8">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="from_name"
+                  placeholder="Enter Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="user_email"
+                  placeholder="Enter Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="number" class="form-label">Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter Number"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Enter Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="user_email"
-              required
-            />
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4" id="cont">
+            <h2>Contact Us</h2>
+            <p>
+              I am a passionate full-stack developer with experience in building
+              responsive and user-friendly websites using modern web
+              technologies. I specialize in both frontend and backend
+              development,
+            </p>
+            <div class="icon">
+              <p><i class="bx bx-user m-2"></i>Nazeer Ahmed</p>
+              <p>
+                <i class="bx bxl-gmail m-2"></i>maliknazeerahmed07@gamil.com
+              </p>
+              <p><i class="bx bx-mobile-alt m-2"></i>(+92) 3276735249</p>
+              <p><i class="bx bxl-whatsapp m-2"></i>(+92) 3276735249</p>
+            </div>
+            <h6>Contact With Social PlatForm</h6>
+            <a href="https://www.linkedin.com/in/nazeer-malik-583382318/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://www.upwork.com/freelancers/~019ca2174e921015e5"
+              ><i class="bx bxl-upwork m-1"></i
+            ></a>
+            <a href="https://www.facebook.com/nazeer.ahmed.495529"
+              ><i class="bx bxl-facebook m-1"></i
+            ></a>
+            <a href="https://www.instagram.com/nazeerahmed680823/"
+              ><i class="bx bxl-instagram ml-1"></i
+            ></a>
+            <a href="https://github.com/malikunderstand" target="_blank"
+              ><i class="fab fa-github m-1"></i
+            ></a>
           </div>
-          <div class="mb-3">
-            <label for="number" class="form-label">Number</label>
-            <input
-              type="number"
-              class="form-control"
-              id="phone"
-              name="phone"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              id="message"
-              name="message"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        </div>
       </div>
     </section>
 
