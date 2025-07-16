@@ -1,5 +1,5 @@
 (function () {
-  emailjs.init('gEi5hpXY6XtvFTfx3');
+  emailjs.init('jqy8lMA_-IrHi1v9u');
 })();
 
 document
@@ -7,7 +7,7 @@ document
   .addEventListener('submit', function (event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_2hwulc8', 'template_6wupp6c', this).then(
+    emailjs.sendForm('service_87r1i8m', 'template_xx6a79l', this).then(
       () => {
         alert('Message sent successfully!');
       },
