@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nazeer Ahmed | Full-Stack Web Developer</title>
-    <link rel="icon" type="image/png" href="" />
+    <link rel="icon" type="image/png" href="./image/title.png" />
     <!-- Boxicon Logo -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -45,9 +45,11 @@
         --success: #10b981;
         --warning: #f59e0b;
         --danger: #ef4444;
-        --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        --shadow:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
           0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        --shadow-lg:
+          0 20px 25px -5px rgba(0, 0, 0, 0.1),
           0 10px 10px -5px rgba(0, 0, 0, 0.04);
         --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         --radius: 12px;
@@ -471,7 +473,7 @@
         color: #f7df1e;
       }
       .tech-tag.react i {
-        color:#5ED3F3;
+        color: #5ed3f3;
       }
       .tech-tag.php i {
         color: #777bb4;
@@ -1395,9 +1397,13 @@
         resize: vertical;
       }
 
+      .form-control::placeholder {
+        color: var(--dark);
+      }
+
       /* ====== FOOTER ====== */
       .footer {
-        background-color: var(--dark);
+        background-color: var(--light);
         color: white;
         padding: 80px 0 40px;
       }
@@ -1413,17 +1419,18 @@
         font-size: 1.3rem;
         font-weight: 700;
         margin-bottom: 25px;
-        color: white;
+        color: var(--dark);
       }
 
       .footer-col p {
-        color: #d1d5db;
+        color: var(--dark);
         line-height: 1.7;
         margin-bottom: 25px;
       }
 
       .footer-links {
         list-style: none;
+        color: var(--dark);
       }
 
       .footer-links li {
@@ -1431,13 +1438,13 @@
       }
 
       .footer-links a {
-        color: #d1d5db;
+        color: var(--dark);
         text-decoration: none;
         transition: var(--transition);
       }
 
       .footer-links a:hover {
-        color: white;
+        color: var(--dark);
         padding-left: 10px;
       }
 
@@ -1450,18 +1457,20 @@
       .footer-social a {
         width: 40px;
         height: 40px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: var(--light);
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: var(--dark);
         text-decoration: none;
         transition: var(--transition);
+        box-shadow: var(--shadow);
       }
 
       .footer-social a:hover {
         background-color: var(--primary);
+        color: white;
         transform: translateY(-3px);
       }
 
@@ -1469,7 +1478,7 @@
         text-align: center;
         padding-top: 40px;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
-        color: #9ca3af;
+        color: var(--dark);
       }
 
       .footer-bottom p {
@@ -1906,7 +1915,7 @@
                 <i class="fab fa-js"></i>
                 JavaScript
               </div>
-               <div class="tech-tag react">
+              <div class="tech-tag react">
                 <i class="fa-brands fa-react"></i>
                 ReactJs
               </div>
@@ -1935,7 +1944,7 @@
               </a>
             </div>
 
-            <div class="hero-stats">
+            <div class="hero-stats" data-aos="fade-up">
               <div class="stat-item">
                 <div class="stat-number" data-count="10">10+</div>
                 <div class="stat-label">Projects</div>
@@ -2018,11 +2027,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6" data-aos="fade-right">
             <div class="profile-img-container">
-              <img
-                src="./image/1.png"
-                alt="Nazeer Ahmed"
-                class="profile-img"
-              />
+              <img src="./image/1.png" alt="Nazeer Ahmed" class="profile-img" />
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
@@ -2411,7 +2416,7 @@
             data-category="other"
             data-aos="fade-up"
             data-aos-delay="100"
-            >
+          >
             <div class="project-image">
               <img
                 src="./image/gym.PNG"
@@ -2559,7 +2564,7 @@
           <!-- Jquery -->
           <div class="skill-card" data-aos="fade-up">
             <div class="skill-icon">
-             <i class='bx bxl-jquery'></i>
+              <i class="bx bxl-jquery"></i>
             </div>
             <h3 class="skill-name">JQuery</h3>
             <div class="skill-level">
@@ -2571,7 +2576,7 @@
           <!-- ReactJs -->
           <div class="skill-card" data-aos="fade-up">
             <div class="skill-icon">
-             <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-react"></i>
             </div>
             <h3 class="skill-name">Reactjs</h3>
             <div class="skill-level">
@@ -2616,10 +2621,10 @@
             <div class="skill-percentage">85%</div>
           </div>
 
-            <!-- Restful Api -->
+          <!-- Restful Api -->
           <div class="skill-card" data-aos="fade-up">
             <div class="skill-icon">
-            <i class='bx bxs-cog'></i>
+              <i class="bx bxs-cog"></i>
             </div>
             <h3 class="skill-name">Restful Api</h3>
             <div class="skill-level">
@@ -2640,10 +2645,10 @@
             <div class="skill-percentage">80%</div>
           </div>
 
-                <!-- GitHub -->
+          <!-- GitHub -->
           <div class="skill-card" data-aos="fade-up">
             <div class="skill-icon">
-               <i class='bx bxl-github'></i>
+              <i class="bx bxl-github"></i>
             </div>
             <h3 class="skill-name">GitHub</h3>
             <div class="skill-level">
@@ -2651,7 +2656,6 @@
             </div>
             <div class="skill-percentage">85%</div>
           </div>
-
         </div>
       </div>
     </section>
@@ -2716,92 +2720,94 @@
           </div>
 
           <!-- Service 4 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-icon">
-                <i class='bx bx-code-alt'></i>
-              </div>
-              <h3 class="service-title">Custom Website Development</h3>
-              <p class="service-description">
-                Building secure, scalable, and fully customized websites tailored to meet unique business requirements and deliver high performance.
-              </p>
-              <ul class="service-features">
-                <li>Custom UI/UX Design</li>
-                <li>Dynamic Web Applications</li>
-                <li>Database Integration</li>
-                <li>SEO-Friendly Structure</li>
-              </ul>
-            </div>
-
-                <!-- Service 5 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-icon">
-                <i class='bx bx-layout'></i>
-              </div>
-              <h3 class="service-title">Landing Page Development</h3>
-              <p class="service-description">
-                Designing high-converting, visually appealing landing pages focused on user engagement, lead generation, and business growth.
-              </p>
-              <ul class="service-features">
-                <li>Modern UI Design</li>
-                <li>Call-to-Action Optimization</li>
-                <li>Fast Loading Speed</li>
-                <li>Responsive Layout</li>
-              </ul>
-            </div>
-
-
-            <!-- Service 6 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-icon">
-                <i class='bx bx-user-circle'></i>
-              </div>
-              <h3 class="service-title">Personal Portfolio Website</h3>
-              <p class="service-description">
-                Creating modern and professional personal portfolio websites to showcase skills, projects, and achievements effectively.
-              </p>
-              <ul class="service-features">
-                <li>Attractive UI Design</li>
-                <li>Project Showcase Section</li>
-                <li>Skills & Experience Display</li>
-                <li>Contact Form Integration</li>
-              </ul>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-icon">
-                <i class='bx bx-briefcase'></i>
-              </div>
-              <h3 class="service-title">Business Website Development</h3>
-              <p class="service-description">
-                Developing professional and scalable business websites to establish strong online presence and drive customer engagement.
-              </p>
-              <ul class="service-features">
-                <li>Corporate Website Design</li>
-                <li>Service & Product Pages</li>
-                <li>Contact & Inquiry Forms</li>
-                <li>SEO Optimized Structure</li>
-              </ul>
-            </div>
-
-           <!-- Service 8-->
           <div class="service-card" data-aos="fade-up" data-aos-delay="200">
             <div class="service-icon">
-             <i class='bx bxs-devices'></i>
+              <i class="bx bx-code-alt"></i>
             </div>
-            <h3 class="service-title">Responsive Design</h3>
+            <h3 class="service-title">Custom Website Development</h3>
             <p class="service-description">
-            Creating responsive, user-friendly websites that adapt seamlessly across all devices efficiently.
+              Building secure, scalable, and fully customized websites tailored
+              to meet unique business requirements and deliver high performance.
             </p>
             <ul class="service-features">
-             <li>Responsive Layout</li>
-             <li>Mobile-Friendly Design</li>
-             <li>Adaptive Design</li>
-             <li>Cross-Device Compatibility</li>
+              <li>Custom UI/UX Design</li>
+              <li>Dynamic Web Applications</li>
+              <li>Database Integration</li>
+              <li>SEO-Friendly Structure</li>
             </ul>
           </div>
 
+          <!-- Service 5 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="bx bx-layout"></i>
+            </div>
+            <h3 class="service-title">Landing Page Development</h3>
+            <p class="service-description">
+              Designing high-converting, visually appealing landing pages
+              focused on user engagement, lead generation, and business growth.
+            </p>
+            <ul class="service-features">
+              <li>Modern UI Design</li>
+              <li>Call-to-Action Optimization</li>
+              <li>Fast Loading Speed</li>
+              <li>Responsive Layout</li>
+            </ul>
+          </div>
 
+          <!-- Service 6 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="bx bx-user-circle"></i>
+            </div>
+            <h3 class="service-title">Personal Portfolio Website</h3>
+            <p class="service-description">
+              Creating modern and professional personal portfolio websites to
+              showcase skills, projects, and achievements effectively.
+            </p>
+            <ul class="service-features">
+              <li>Attractive UI Design</li>
+              <li>Project Showcase Section</li>
+              <li>Skills & Experience Display</li>
+              <li>Contact Form Integration</li>
+            </ul>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="bx bx-briefcase"></i>
+            </div>
+            <h3 class="service-title">Business Website Development</h3>
+            <p class="service-description">
+              Developing professional and scalable business websites to
+              establish strong online presence and drive customer engagement.
+            </p>
+            <ul class="service-features">
+              <li>Corporate Website Design</li>
+              <li>Service & Product Pages</li>
+              <li>Contact & Inquiry Forms</li>
+              <li>SEO Optimized Structure</li>
+            </ul>
+          </div>
+
+          <!-- Service 8-->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="bx bxs-devices"></i>
+            </div>
+            <h3 class="service-title">Responsive Design</h3>
+            <p class="service-description">
+              Creating responsive, user-friendly websites that adapt seamlessly
+              across all devices efficiently.
+            </p>
+            <ul class="service-features">
+              <li>Responsive Layout</li>
+              <li>Mobile-Friendly Design</li>
+              <li>Adaptive Design</li>
+              <li>Cross-Device Compatibility</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -3246,7 +3252,7 @@
                 class="social-link"
                 target="_blank"
               >
-               <i class='bx bxl-upwork'></i>
+                <i class="bx bxl-upwork"></i>
               </a>
               <a
                 href="https://www.instagram.com/nazeermalik786/"
@@ -3374,7 +3380,8 @@
             <h3>Contact Info</h3>
             <ul class="footer-links">
               <li>
-                <i class="fas fa-envelope"></i> maliknazeerahmed07<br>@gmail.com
+                <i class="fas fa-envelope"></i>
+                maliknazeerahmed07<br />@gmail.com
               </li>
               <li><i class="fas fa-phone"></i> (+92) 327 6735249</li>
               <li><i class="fas fa-map-marker-alt"></i> Pakistan</li>
@@ -3400,17 +3407,23 @@
         offset: 100,
       });
 
-      // Theme Toggle
       const themeToggle = document.getElementById('themeToggle');
+
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-theme');
+        themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+      }
+
       themeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-theme');
         const icon = themeToggle.querySelector('i');
+
         if (document.body.classList.contains('dark-theme')) {
-          icon.classList.remove('fa-moon');
-          icon.classList.add('fa-sun');
+          icon.classList.replace('fa-moon', 'fa-sun');
+          localStorage.setItem('theme', 'dark');
         } else {
-          icon.classList.remove('fa-sun');
-          icon.classList.add('fa-moon');
+          icon.classList.replace('fa-sun', 'fa-moon');
+          localStorage.setItem('theme', 'light');
         }
       });
 
@@ -3550,7 +3563,7 @@
             }
           });
         },
-        { threshold: 0.5 }
+        { threshold: 0.5 },
       );
 
       observer.observe(document.querySelector('.hero-stats'));
@@ -3627,7 +3640,7 @@
                     `;
             break;
 
-            case 'react':
+          case 'react':
             code = `
                         <div class="editor-line"><span class="code-comment">// React - Simple Component</span></div>
                         <div class="editor-line"><span class="code-keyword">import</span> React <span class="code-keyword">from</span> <span class="code-string">"react"</span>;</div>
